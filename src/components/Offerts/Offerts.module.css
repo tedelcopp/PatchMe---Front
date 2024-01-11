@@ -1,115 +1,31 @@
-.our {
-    font-size: 45px;
-    color: #5E455A;
-    display: flex;
-    margin-top: 25px;
-    margin-left: 40px;
-    text-decoration: underline;
+.offertContainer {
+    background-image: url("/src/assets/WallpaperBlueFlores.jpg");
 }
 
-.topwines {
-    color: #5E455A;
-    float: left;
-    font-size: 60px;
-    margin-right: 45px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    display: flex;
-    text-decoration: underline;
 
-}
-
-.flexContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: larger;
-}
-
-.favoriteMonth {
-    margin-bottom: 3px;
+.offerts {
     color: #F0F0EF;
+    text-align: center;
     background-color: #212529;
-    width: 98.8vw;
-    padding: 1.2%;
-    text-align: center;
+    padding: 1rem;
+    text-decoration-line: underline;
+
 }
 
-.reel {
-    width: 100%;
-    padding: 5px 1px;
-    background-image: url("./fondo-escritorio-flores-vector-lindo_53876-136877.jpg");
+.slickSlider {
+    padding: 0 10px;
 }
 
-.prodCard {
-    width: 300px;
-}
+/* Estilos específicos para pantallas con un ancho máximo de 767px (típicamente dispositivos móviles) */
+@media (max-width: 767px) {
+    .offertContainer {
+        padding: 0px;
+        /* Ajusta el relleno según sea necesario para hacer que el contenedor sea más grande */
+    }
 
-.card {
-    border-width: 3px;
-    border-style: solid;
-    border-color: #000000;
-    background-color: #ffffff
-}
-
-.name {
-    color: #5E455A;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: xx-large;
-}
-
-.cardtop {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.cardbottom {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.cardbottom h3 {
-    color: #5E455A;
-    text-align: center;
-    margin-left: 12px;
-    text-decoration: underline;
-}
-
-.category h4 {
-    color: #5E455A;
-    justify-content: center;
-    margin-top: -14px;
-    display: flex;
-    margin-left: 5px;
-    text-decoration: underline;
-}
-
-.cardBody {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 100%;
-}
-
-.heartIcon,
-.cartIcon {
-    font-size: 22px;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: color 0.3s ease;
-}
-
-.heartIcon:hover {
-    color: red;
-}
-
-.cartIcon:hover {
-    color: green;
+    .offerts {
+        font-size: 20px;
+        /* Ajusta el tamaño de la fuente según sea necesario para que el texto sea más grande */
+        /* Otros estilos para hacer que el componente sea más grande en la versión móvil */
+    }
 }

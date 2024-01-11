@@ -1,0 +1,29 @@
+.cardContainer {
+    text-align: center;
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offertImg {
+    margin-top: 10px;
+    width: 60%;
+    border: solid 4pt #212529;
+}
+
+.tittleOffert {
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .offertImg {
+        width: 85%;
+        /* Ajusta el tamaño de la imagen para dispositivos móviles */
+    }
+
+    .tittleOffert {
+        font-size: 11px;
+        /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+}

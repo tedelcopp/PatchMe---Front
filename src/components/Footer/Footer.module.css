@@ -1,6 +1,6 @@
 /* Estilos ambas versiones */
 .footerContainer {
-    background-image: url("./fondo-escritorio-flores-vector-lindo_53876-136877.jpg");
+    background-image: url("/src/assets//WallpaperBlueFlores.jpg");
     box-sizing: border-box;
     color: #574c43;
 }
