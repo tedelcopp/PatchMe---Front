@@ -1,0 +1,41 @@
+// Footer.js
+
+import React from 'react';
+import { FaMapLocationDot } from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import styles from "./Footer.module.css";
+
+export default function Footer() {
+  return (
+    <Card className={`${styles.footerContainer} rounded-0 mt-4`}>
+      <div className={`card-body ${styles.bodyContainer}`}>
+        <Card.Title><b>¿Querés comunicarte con nosotros?</b></Card.Title>
+        <Card.Text className={`mb-1 font-italic ${styles.text}`}>
+          <BsFillTelephoneFill /> 
+          11 6290 1249
+        </Card.Text>
+        <Card.Text className={`mb-2 font-italic ${styles.text}`}>
+          <FaMapLocationDot /> Guise 1954 | Palermo, Buenos Aires.
+        </Card.Text>
+        <Card.Text><u><b>Conoce más en nuestras redes sociales!</b></u></Card.Text>
+        <div>
+          <Button variant="primary" className={`me-2 ${styles.icon}`} href="enlace_facebook" target="_blank">
+            <FaFacebook />
+          </Button>
+          <Button variant="danger" className={`me-2 ${styles.icon}`} href="enlace_instagram" target="_blank">
+            <FaInstagram />
+          </Button>
+          <Button variant="success" className={styles.icon} href="enlace_whatsapp" target="_blank">
+            <FaWhatsapp />
+          </Button>
+        </div>
+        <div className={`${styles['custom-footer']} ${styles.text}`}>
+          Copyright Patch&Me - 2024. Todos los derechos reservados.
+        </div>
+      </div>
+    </Card>
+  );
+}
