@@ -39,14 +39,6 @@ export default function NavBar() {
                 />
                 <Button variant="outline-success">Buscar</Button>
               </Form>
-              <div className="d-flex">
-                <span className="me-2" style={{ color: 'white' }}>
-                  <FaCartPlus className="me-2" style={{ color: 'white' }} />
-                </span>
-                <span style={{ color: 'white' }}>
-                  <FaHeart />
-                </span>
-              </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

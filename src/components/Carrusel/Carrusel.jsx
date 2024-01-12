@@ -1,13 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from "./Carrusel.module.css"
 
 export default function Carrusel() {
   return (
-    <div className="mb-4">
-    <Carousel>
+    <div className={`mb-4 ${styles.carouselContainer}`}>
+ <Carousel>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className={`d-block ${styles.carouselImage}`}
           src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
           alt="First slide"
           />
