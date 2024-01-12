@@ -1,15 +1,12 @@
-/* styles.module.css */
 .carouselContainer {
     width: 75%;
     margin: 0 auto;
-    /* Centrar horizontalmente */
 }
 
 .carouselImage {
     width: 100%;
 }
 
-/* Estilos para pantallas pequeñas y medianas (menos de 768px) */
 @media (max-width: 767.98px) {
     .carouselContainer {
         width: 95%;
