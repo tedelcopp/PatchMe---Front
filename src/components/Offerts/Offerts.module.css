@@ -17,18 +17,14 @@
     padding: 0 10px;
 }
 
-/* Estilos específicos para pantallas con un ancho máximo de 767px (típicamente dispositivos móviles) */
+
 @media (max-width: 767px) {
     .offertContainer {
         padding: 0px;
-        /* Ajusta el relleno según sea necesario para hacer que el contenedor sea más grande */
         height: auto;
-        /* Ajusta la altura según sea necesario */
     }
 
     .offerts {
         font-size: 20px;
-        /* Ajusta el tamaño de la fuente según sea necesario para que el texto sea más grande */
-        /* Otros estilos para hacer que el componente sea más grande en la versión móvil */
     }
 }
