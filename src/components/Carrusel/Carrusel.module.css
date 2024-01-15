@@ -1,14 +1,21 @@
 .carouselContainer {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .carouselImage {
     width: 100%;
+    height: auto;
 }
 
 @media (max-width: 767.98px) {
     .carouselContainer {
         width: 95%;
+    }
+
+    .carouselImage {
+        height: 200px;
     }
 }
