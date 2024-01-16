@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import L from "leaflet";
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
-import s from "./Map.module.css";
 import "leaflet/dist/leaflet.css";
-import { useState } from "react";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
-import L from "leaflet";
+import s from "./Map.module.css";
 
 const Map = ({ positionDetail }) => {
   const MarkerIcon = L.icon({
