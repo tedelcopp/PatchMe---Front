@@ -1,7 +1,43 @@
+.titleAbout {
+    padding-top: 0rem;
+    margin: auto;
+    width: 70%;
+    border: solid 4pt #212529;
+}
+
 .about-us-container {
-    /* background-color: #ab0c0c; */
     background-size: cover;
     background-position: center;
     color: #000000;
     padding: 20px;
+
+}
+
+.questionsContainer {
+    margin: 25px auto 0;
+    /* Margen superior, centrado horizontal y sin margen inferior */
+    width: 65%;
+    align-items: center;
+}
+
+
+.aboutUsText {
+    text-align: center;
+}
+
+.aboutUsText p {
+    max-width: 600px;
+    margin: 20px auto 1px;
+    font-size: 18px;
+}
+
+.titleQuestions {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.offerts {
+    text-align: center;
+    background-color: #212529;
+    padding: 0.8rem;
 }
