@@ -1,8 +1,10 @@
+/* Version Ordenador */
 .offertContainer {
     background-image: url("/src/assets/WallpaperBlueFlores.jpg");
     align-items: center;
     justify-content: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 85%;
 }
 
 .offerts {
@@ -13,11 +15,7 @@
     text-decoration-line: underline;
 }
 
-.slickSlider {
-    padding: 0 10px;
-}
-
-
+/* Version Responsive */
 @media (max-width: 767px) {
     .offertContainer {
         padding: 0px;

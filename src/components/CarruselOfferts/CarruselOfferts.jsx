@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProductCard from "../ProductCard/ProductCard";
-import styles from "../Offerts/Offerts.module.css"
+import styles from "../CarruselOfferts/CarruselOfferts.module.css"
 
 export default class AutoPlay extends Component {
   render() {
@@ -22,42 +22,40 @@ export default class AutoPlay extends Component {
   const ofertas = [
     {
       id: 1,
-      name: 'Vino Tinto Reserva',
+      name: 'Patch Rick & Morty',
       image: 'https://via.placeholder.com/300',
-      origin: 'Argentina',
-      category: 'Tinto',
     },
     {
       id: 2,
-      name: 'Vino Blanco Premium',
+      name: 'Patch Flowers',
       image: 'https://via.placeholder.com/300',
       origin: 'Chile',
       category: 'Blanco',
     },
     {
       id: 3,
-      name: 'Vino Rosado Exclusivo',
+      name: 'Patch Wine Lover',
       image: 'https://via.placeholder.com/300',
       origin: 'España',
       category: 'Rosado',
     },
     {
       id: 4,
-      name: 'Vino Tinto Reserva',
+      name: 'Patch Smile',
       image: 'https://via.placeholder.com/300',
       origin: 'Argentina',
       category: 'Tinto',
     },
     {
       id: 5,
-      name: 'Vino Blanco Premium',
+      name: 'Patch Good Life',
       image: 'https://via.placeholder.com/300',
       origin: 'Chile',
       category: 'Blanco',
     },
     {
       id: 6,
-      name: 'Vino Rosado Exclusivo',
+      name: 'Patch Better',
       image: 'https://via.placeholder.com/300',
       origin: 'España',
       category: 'Rosado',

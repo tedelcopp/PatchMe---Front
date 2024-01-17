@@ -1,3 +1,4 @@
+/* Version Ordenador */
 .carouselContainer {
     width: 85%;
     margin: 0 auto;
@@ -10,6 +11,7 @@
     height: auto;
 }
 
+/* Version Responsive */
 @media (max-width: 767.98px) {
     .carouselContainer {
         width: 95%;

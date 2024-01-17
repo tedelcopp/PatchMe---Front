@@ -1,6 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-export default function Forum() {
+export default function Questions() {
   return (
     <Accordion>
         <Accordion.Item eventKey="0">

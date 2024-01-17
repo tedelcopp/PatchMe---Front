@@ -24,7 +24,7 @@
     font-style: italic;
 }
 
-/* Version Mobile*/
+/* Version Responsive*/
 @media (max-width: 768px) {
     .footerContainer {
         padding: 0px;
@@ -36,7 +36,7 @@
     }
 }
 
-/* Version de Escritorio*/
+/* Version Ordenador*/
 @media (min-width: 769px) {
     .custom-footer {
         width: 98.8vw;
