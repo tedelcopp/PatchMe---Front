@@ -1,10 +1,13 @@
 import Accordion from 'react-bootstrap/Accordion';
+import styles from "./Questions.module.css";
 
 export default function Questions() {
   return (
-    <Accordion>
+    <div className={styles.questionsBackground} >
+    <div className={styles.questionsContainer} >
+    <Accordion  data-bs-theme="dark">
         <Accordion.Item eventKey="0">
-        <Accordion.Header>¿Realizan envios?</Accordion.Header>
+        <Accordion.Header >¿Realizan envios?</Accordion.Header>
         <Accordion.Body>
         Si, realizamos envios a todo el pais. 
         </Accordion.Body>
@@ -12,7 +15,7 @@ export default function Questions() {
       <Accordion.Item eventKey="1">
         <Accordion.Header>¿Donde se encuentran?</Accordion.Header>
         <Accordion.Body>
-          Nos encontramos en el barrio de Palermo, Buenos Aires - Argentina.
+          Nos encontramos en Guise 1954 - Palermo, Buenos Aires - Arg.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
@@ -43,6 +46,8 @@ export default function Questions() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    </div>
+    </div>
     
   );
 }

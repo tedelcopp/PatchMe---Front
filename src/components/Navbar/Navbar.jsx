@@ -22,7 +22,9 @@ export default function NavBar() {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Link to="/" className="nav-link">Inicio</Link>
                 <Link to="/AboutUs" className="nav-link">Nosotros</Link>
-                <NavDropdown title="Patchs">
+                <NavDropdown title="Patchs"
+                data-bs-theme="dark"
+                >
                   <NavDropdown.Item href="#action3">Termoadhesivos</NavDropdown.Item>
                   <NavDropdown.Item href="#action4" variant="outline-secondary">
                     Cocidos
