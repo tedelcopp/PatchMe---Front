@@ -1,51 +1,106 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { FaCartPlus, FaHeart } from 'react-icons/fa';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 
 export default function NavBar() {
   return (
     <>
-      <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
-        <Container fluid>
-          <Navbar.Brand>Patch&Me</Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Offcanvas>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Link to="/" className="nav-link">Inicio</Link>
-                <Link to="/AboutUs" className="nav-link">Nosotros</Link>
-                <NavDropdown title="Patchs"
-                data-bs-theme="dark"
-                >
-                  <NavDropdown.Item href="#action3">Termoadhesivos</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4" variant="outline-secondary">
-                    Cocidos
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">Outlet</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
+      <nav className="navbar navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+          <Link to="inicio">
+                        Patch & Me
+                      </Link>
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="offcanvas offcanvas-end text-bg-dark"
+            tabIndex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div className="offcanvas-header">
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li className="nav-item">
+                  <Link to="inicio" className="nav-link active">
+                    Inicio
+                  </Link>
+                </li>
+                <li className="nav-item">
+                <Link to="nosotros" className="dropdown-item">
+                        Nosotros
+                      </Link>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                   Patchs
+                  </a>
+                  <ul className="dropdown-menu dropdown-menu-dark">
+                  <li>
+                  <Link to="/shop" className="dropdown-item">
+                        Ver todos
+                      </Link>
+                    </li>
+                    <li>
+                    <Link to="/shop-cocidos" className="dropdown-item">
+                      Cocidos
+                      </Link>
+                    </li>
+                    <li>
+                    <Link to="/shop-termoadhesivos" className="dropdown-item">
+                        Termoadhesivos
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                    <Link to="/outlet" className="dropdown-item">
+                       Outlet
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form className="d-flex mt-3" role="search">
+                <input
+                  className="form-control me-2"
                   type="search"
-                  placeholder="¿Qué estás buscando?"
-                  className="me-2"
+                  placeholder="¿Que estas buscando?"
+                  aria-label="Search"
                 />
-                <Button variant="outline-success">Buscar</Button>
-              </Form>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar>
-      <div style={{ marginTop: '70px' }}></div>
+                <button className="btn btn-success" type="submit">
+                 Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }

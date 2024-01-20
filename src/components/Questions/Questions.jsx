@@ -1,5 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
-import styles from "./Questions.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Questions() {
   return (

@@ -16,8 +16,7 @@ export default function AboutUs() {
             </div>
             <p>
               ¡Bienvenido a Patch&Me! Somos tu tienda de parches exclusivos para personalizar tus prendas
-              y expresar tu estilo único. Nuestra misión es ofrecer una amplia variedad de parches de alta calidad
-              que se adapten a todos los gustos y personalidades.
+              y expresar tu estilo de manera unica. Nuestra misión es ofrecerte patchs de calidad que se adapten a todos los gustos y personalidades.
             </p>
             <p>
               En Patch&Me, creemos en la individualidad y la creatividad. Nos esforzamos por proporcionarte parches

@@ -1,14 +1,6 @@
-/* Version Ordenador */
-/* .questionsBackground {
-    background-image: url("../../assets//fondo-dia-amarillo-dibujado-mano_23-2149417532.jpg");
-} */
-
-/* .questionsContainer {
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-} */
-
-/* Version Responsive */
+.accordion-header {
+    background-color: red;
+    /* Cambia al color que desees */
+    color: white;
+    /* Cambia al color que desees */
+}
