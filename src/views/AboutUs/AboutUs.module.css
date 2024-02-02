@@ -3,6 +3,8 @@
     margin: auto;
     width: 70%;
     border: solid 4pt #212529;
+    background-image: url("/src/assets//WallpaperBlueFlores.jpg");
+    background-size: auto;
 }
 
 .about-us-container {

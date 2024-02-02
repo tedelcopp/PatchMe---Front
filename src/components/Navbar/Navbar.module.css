@@ -1,0 +1,10 @@
+.custom-link {
+    text-decoration: none;
+    color: rgb(177, 0, 0);
+    /* Otros estilos que desees aplicar */
+}
+
+.custom-link:hover {
+    /* Estilos adicionales al pasar el ratón sobre el enlace */
+    /* Por ejemplo, cambiar el color o agregar una transición */
+}

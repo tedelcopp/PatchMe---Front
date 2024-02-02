@@ -2,17 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import styles from "./Navbar.module.css"
 
 export default function NavBar() {
   return (
     <>
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-          <Link to="inicio">
-                        Patch & Me
-                      </Link>
-          </a>
+          <div> 
+          <Link to="/" className={`${styles.customLink} nav-link`}>
+ 
+  Patch & Me
+
+  </Link>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -40,7 +43,7 @@ export default function NavBar() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <Link to="inicio" className="nav-link active">
+                  <Link to="/" className="nav-link active">
                     Inicio
                   </Link>
                 </li>
