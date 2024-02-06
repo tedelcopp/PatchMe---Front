@@ -1,29 +1,62 @@
-.cardContainer {
-    text-align: center;
-    margin-right: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card {
+    /* Estilos de la tarjeta */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Asegura que las tarjetas ocupen todo el espacio disponible */
+    max-width: 300px;
+    /* Establece un ancho máximo para las tarjetas */
+    margin: 0;
+    /* Elimina los márgenes externos para evitar espacios innecesarios */
+    padding: 10px;
+    /* Ajusta el margen interno de las tarjetas */
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior entre las tarjetas */
 }
 
-.offertImg {
+.img {
+    /* Estilos de la imagen */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+}
+
+.cardBody {
+    /* Estilos del cuerpo de la tarjeta */
+    padding: 20px;
+}
+
+.cvp {
+    /* Estilos del contenido dentro de la tarjeta */
+}
+
+.cardTitle {
+    /* Estilos del título de la tarjeta */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.cardText {
+    /* Estilos del texto de la tarjeta */
+    color: #666;
+}
+
+.details,
+.cart {
+    /* Estilos de los botones */
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
     margin-top: 10px;
-    width: 60%;
-    border: solid 4pt #212529;
 }
 
-.tittleOffert {
-    font-size: 18px;
-}
-
-@media (max-width: 767px) {
-    .offertImg {
-        width: 85%;
-        /* Ajusta el tamaño de la imagen para dispositivos móviles */
-    }
-
-    .tittleOffert {
-        font-size: 11px;
-        /* Ajusta el tamaño de la fuente para dispositivos móviles */
-    }
+.details:hover,
+.cart:hover {
+    background-color: #0056b3;
 }

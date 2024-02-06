@@ -17,7 +17,6 @@
 
 .questionsContainer {
     margin: 25px auto 0;
-    /* Margen superior, centrado horizontal y sin margen inferior */
     width: 65%;
     align-items: center;
 }
