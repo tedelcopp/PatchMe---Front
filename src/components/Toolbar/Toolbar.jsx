@@ -14,7 +14,7 @@ export default function Toolbar() {
       >
         <ButtonGroup aria-label="First group">
           <Link to="/shop/novedades" className="btn btn-secondary">Novedades</Link>
-          <Link to="/shop/cocidos"className="btn btn-secondary">Cocidos</Link>
+          <Link to="cocidos" className="btn btn-secondary">Cocidos</Link>
           <Link to="/shop/termoadhesivos" className="btn btn-secondary">Termoadhesivos</Link>
           <Link to="/shop/outlet" className="btn btn-secondary">Outlet</Link>
         </ButtonGroup>

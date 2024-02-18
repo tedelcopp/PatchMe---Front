@@ -20,10 +20,9 @@ export default function NavBar() {
     <>
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <div> 
+          <div className={styles.customLink}> 
             <Link
               to="/"
-              className={`${styles.customLink} nav-link`}
               onClick={closeMenuAndScrollTop}
             >
               Patch & Me

@@ -58,19 +58,21 @@ export default class AutoPlay extends Component {
       name: 'Patch Better',
       image: 'https://via.placeholder.com/300',
       origin: 'España',
+
+      
       category: 'Rosado',
     },
   ];
 
   return (
     <div className={styles.offertContainer} >
-      <h2 className={styles.offerts}>Destacados del mes</h2>
+      <h2 className={styles.marginOfferts}>Patchs mas buscados</h2>
       <Slider className={styles.slickSlider} {...settings}>
         {ofertas.map(oferta => (
           <ProductCard key={oferta.id} oferta={oferta} />
         ))}
       </Slider>
-      <div className={styles.offerts}></div>
+      <div className={styles.marginOfferts}></div>
     </div>
     
   );

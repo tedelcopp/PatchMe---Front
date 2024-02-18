@@ -1,4 +1,4 @@
-/* Estilos ambas versiones */
+/* Version Ordenador */
 .footerContainer {
     background-image: url("/src/assets//WallpaperBlueFlores.jpg");
     box-sizing: border-box;
@@ -24,7 +24,7 @@
     font-style: italic;
 }
 
-/* Version Responsive*/
+/* Version Responsive */
 @media (max-width: 768px) {
     .footerContainer {
         padding: 0px;
@@ -33,11 +33,12 @@
     .btn,
     .icon {
         font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 4px;
     }
 }
 
-/* Version Ordenador*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .custom-footer {
         width: 98.8vw;
         margin-top: 15px;

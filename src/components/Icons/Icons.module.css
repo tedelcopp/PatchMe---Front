@@ -27,14 +27,10 @@
 
 h5 {
     font-size: 1.2rem;
-    /* Ajusta el tamaño del texto para la versión responsive */
     margin-bottom: 0.5rem;
-    /* Ajusta el margen inferior del h5 para la versión responsive */
 }
 
 p {
     font-size: 0.9rem;
-    /* Ajusta el tamaño del texto para la versión responsive */
     margin-bottom: 0;
-    /* Elimina el margen inferior del párrafo para la versión responsive */
 }

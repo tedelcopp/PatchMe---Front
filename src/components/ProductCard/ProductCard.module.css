@@ -1,62 +1,84 @@
+/* Version Ordenador */
 .card {
-    /* Estilos de la tarjeta */
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    /* Asegura que las tarjetas ocupen todo el espacio disponible */
-    max-width: 300px;
-    /* Establece un ancho máximo para las tarjetas */
-    margin: 0;
-    /* Elimina los márgenes externos para evitar espacios innecesarios */
-    padding: 10px;
-    /* Ajusta el margen interno de las tarjetas */
-    margin-bottom: 20px;
-    /* Ajusta el margen inferior entre las tarjetas */
+    max-width: 250px;
+    margin: 0 auto 7px;
+    padding: 5px;
 }
 
-.img {
-    /* Estilos de la imagen */
+.cardImg {
     width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
     height: auto;
-    /* Permite que la altura se ajuste automáticamente */
 }
 
 .cardBody {
-    /* Estilos del cuerpo de la tarjeta */
-    padding: 20px;
-}
-
-.cvp {
-    /* Estilos del contenido dentro de la tarjeta */
+    padding: 5px;
 }
 
 .cardTitle {
-    /* Estilos del título de la tarjeta */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
-.cardText {
-    /* Estilos del texto de la tarjeta */
+.cardPrice {
     color: #666;
+    text-align: center;
+    font-size: 1.0rem;
 }
 
-.details,
-.cart {
-    /* Estilos de los botones */
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 10px;
+.cardIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.details:hover,
-.cart:hover {
-    background-color: #0056b3;
+.cardHeart,
+.cardCart {
+    font-size: 24px;
+    transition: all 0.3s ease;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.cardHeart:hover {
+    transform: scale(1.3);
+    color: red;
+}
+
+
+.cardCart:hover {
+    transform: scale(1.3);
+    color: #61BD00;
+}
+
+.cardHeart {
+    color: #212529
+}
+
+.cardCart {
+    color: #212529
+}
+
+/* Version Responsive */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+
+    .cardTitle {
+        font-size: 0.7rem;
+    }
+
+    .cardPrice {
+        font-size: 0.6rem;
+    }
+
+    .cardHeart,
+    .cardCart {
+        font-size: 16px;
+    }
 }

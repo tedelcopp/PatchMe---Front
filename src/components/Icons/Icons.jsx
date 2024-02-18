@@ -15,7 +15,7 @@ export default function Icons() {
         <Col xs={12} md={3} className="text-center mb-4">
           <FaTruck className={styles.icon}  />
           <h5>Envíos</h5>
-          <p className="mb-0">Envíos gratis a todo el país en compras superiores a $25000.</p>
+          <p className="mb-0">Envíos gratis a todo el país en compras superiores a $15000.</p>
         </Col>
 
         <Col xs={12} md={3} className="text-center mb-4">
