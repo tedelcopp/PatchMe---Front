@@ -1,9 +1,9 @@
 .titleAbout {
     padding-top: 0rem;
     margin: auto;
-    width: 70%;
+    width: 50%;
     border: solid 4pt #212529;
-    background-image: url("/src/assets//WallpaperBlueFlores.jpg");
+    background-image: url("https://i.ibb.co/7QBMQLQ/fondo-escritorio-flores-vector-lindo-53876-136877.jpg ");
     background-size: auto;
 }
 
@@ -40,5 +40,5 @@
 .offerts {
     text-align: center;
     background-color: #212529;
-    padding: 0.8rem;
+    padding: 0.2rem;
 }

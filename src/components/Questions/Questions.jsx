@@ -44,19 +44,6 @@ export default function Questions() {
           </ol>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="4">  
-        <Accordion.Header>¿Realizan cambios?</Accordion.Header>
-        <Accordion.Body>
-          <ol>
-        <li>Te recomendamos limpiar la tela previamente para asegurarte de que esté libre de suciedad.</li>
-        <li>Ahora si, coloca el parche en la posición deseada y sujétalo con alfileres si es necesario.</li>
-<li>Encende la plancha y espera a la temperatura recomendada para tu tela.</li>
-<li>Coloca un paño delgado sobre el parche y la tela para protegerla.</li>
-<li>Presiona la plancha firmemente sobre el parche durante 15 a 30 segundos.</li>
-<li>Espera a que la tela se enfríe antes de volver a manipularla.</li>
-          </ol>
-        </Accordion.Body>
-      </Accordion.Item>
     </Accordion>
     </div>
   );

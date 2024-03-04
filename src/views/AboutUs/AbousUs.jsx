@@ -33,9 +33,9 @@ export default function AboutUs() {
       </Container>
       <Container className={`mt-5 ${styles.offerts}`}></Container>
       <Container className={styles.questionsContainer}>
-        <div className={styles.titleQuestions}>
+        {/* <div className={styles.titleQuestions}>
           <h2><u>Preguntas Frecuentes</u></h2>
-        </div>
+        </div> */}
         <Questions />
       </Container>
       <div className={`mt-5 ${styles.offerts}`}></div>

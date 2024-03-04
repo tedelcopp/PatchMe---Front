@@ -1,6 +1,6 @@
 /* Version Ordenador */
 .footerContainer {
-    background-image: url("/src/assets//WallpaperBlueFlores.jpg");
+    background-image: url("https://i.ibb.co/7QBMQLQ/fondo-escritorio-flores-vector-lindo-53876-136877.jpg ");
     box-sizing: border-box;
     color: #574c43;
 }
@@ -22,6 +22,10 @@
 
 .font-italic {
     font-style: italic;
+}
+
+.icon {
+    margin-top: 7px;
 }
 
 /* Version Responsive */
