@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { PiWarningOctagonFill } from "react-icons/pi";
 import Slider from "react-slick";
 import ProductCard from "../ProductCard/ProductCard";
 import styles from "../CarruselOfferts/CarruselOfferts.module.css"
@@ -66,7 +67,11 @@ export default class AutoPlay extends Component {
 
   return (
     <div className={styles.offertContainer} >
-      <h2 className={styles.marginOfferts}>Patchs mas buscados</h2>
+      <h2 className={styles.marginOfferts}>
+      <PiWarningOctagonFill />
+      Mas buscados
+      <PiWarningOctagonFill />
+        </h2>
       <Slider className={styles.slickSlider} {...settings}>
         {ofertas.map(oferta => (
           <ProductCard key={oferta.id} oferta={oferta} />

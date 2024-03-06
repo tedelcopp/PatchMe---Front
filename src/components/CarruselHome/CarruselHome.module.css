@@ -1,7 +1,7 @@
 /* Version Ordenador */
 .carouselContainer {
     width: 85%;
-    margin: 0 auto;
+    margin: 90px auto;
     display: flex;
     align-items: center;
 }
@@ -12,9 +12,10 @@
 }
 
 /* Version Responsive */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .carouselContainer {
-        width: 95%;
+        width: auto;
+        height: auto;
     }
 
     .carouselImage {

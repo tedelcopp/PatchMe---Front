@@ -8,7 +8,7 @@ export default function Carrusel() {
  <Carousel>
       <Carousel.Item interval={1000}>
         <img
-          className={`d-block ${styles.carouselImage}`}
+          className="d-block w-100"
           src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
           alt="First slide"
           />
