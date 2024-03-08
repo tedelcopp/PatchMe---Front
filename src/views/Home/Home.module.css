@@ -1,0 +1,10 @@
+.backgroundHome {
+    background-image: url('../../views/AboutUs/photo-1589810264340-0ce27bfbf751.avif');
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1% 0 4.5% 0;
+    margin-top: 5px;
+    overflow-x: hidden;
+}
