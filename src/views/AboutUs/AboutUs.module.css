@@ -76,10 +76,12 @@
     }
 
     .titleQuestions {
-        width: auto;
+        width: 90%;
+        max-width: 300px;
         text-align: center;
-        margin: auto;
-        margin-bottom: 15px;
+        margin: 25px auto 15px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         border-radius: 50px;
         border: solid 4pt #212529;
         background: #e9a713;
