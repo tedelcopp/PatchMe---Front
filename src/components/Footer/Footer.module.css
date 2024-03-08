@@ -2,7 +2,8 @@
 .footerContainer {
     background-image: url("https://i.ibb.co/7QBMQLQ/fondo-escritorio-flores-vector-lindo-53876-136877.jpg ");
     box-sizing: border-box;
-    color: #574c43;
+    background: rgb(1, 147, 174);
+    background: linear-gradient(326deg, rgba(1, 147, 174, 1) 0%, rgba(233, 167, 19, 1) 75%);
     border-color: #212529;
     border-width: 3.5px;
 }

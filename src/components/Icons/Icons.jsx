@@ -14,25 +14,25 @@ export default function Icons() {
       <Row>
         <Col xs={12} md={3} className="text-center mb-4">
           <FaTruck className={styles.icon}  />
-          <h5>Envíos</h5>
+          <h5><u>Envíos</u></h5>
           <p className="mb-0">Envíos gratis a todo el país en compras superiores a $15000.</p>
         </Col>
 
         <Col xs={12} md={3} className="text-center mb-4">
           <IoMdCard className={styles.icon}  />
-          <h5>Medios de Pago</h5>
+          <h5><u>Medios de Pago</u></h5>
           <p>Tarjeta de crédito, débito y/o transferencia bancaria.</p>
         </Col>
 
         <Col xs={12} md={3} className="text-center mb-4">
           <FaPercentage className={styles.icon} />
-          <h5>3 y 6 cuotas sin interés</h5>
+          <h5><u>3 y 6 cuotas sin interés</u></h5>
           <p>Abonando con todas las tarjetas de crédito.</p>
         </Col>
 
         <Col xs={12} md={3} className="text-center mb-4">
           <RiShoppingBag3Line className={styles.icon}  />
-          <h5>Pick Up</h5>
+          <h5><u>Pick Up</u></h5>
           <p>En nuestro local de Guise 1954, Palermo.</p>
         </Col>
       </Row>

@@ -1,10 +1,20 @@
+.aboutUsBackground {
+    background-image: url('./photo-1589810264340-0ce27bfbf751.avif');
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1% 0 4.5% 0;
+}
+
 .titleAbout {
     padding-top: 0rem;
     margin: auto;
-    width: 50%;
+    margin-top: 50px;
+    width: 65%;
     border: solid 4pt #212529;
-    background-image: url("https://i.ibb.co/7QBMQLQ/fondo-escritorio-flores-vector-lindo-53876-136877.jpg ");
-    background-size: auto;
+    border-radius: 50px;
+    background: #e9a713;
 }
 
 .about-us-container {
@@ -12,7 +22,6 @@
     background-position: center;
     color: #000000;
     padding: 20px;
-
 }
 
 .questionsContainer {
@@ -33,12 +42,54 @@
 }
 
 .titleQuestions {
+    width: 45%;
     text-align: center;
+    margin: auto;
     margin-bottom: 15px;
+    padding-top: 0rem;
+    border-radius: 50px;
+    border: solid 4pt #212529;
+    background: #e9a713;
 }
 
 .offerts {
     text-align: center;
     background-color: #212529;
     padding: 0.2rem;
+    width: 45%;
+}
+
+/* Version Responsive*/
+@media screen and (max-width: 768px) {
+    .titleAbout {
+        margin-top: 45px;
+        width: auto;
+    }
+
+    .titleAbout h2 {
+        font-size: auto;
+    }
+
+    .aboutUsText p {
+        font-size: auto;
+
+    }
+
+    .titleQuestions {
+        width: auto;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        border: solid 4pt #212529;
+        background: #e9a713;
+    }
+
+    .offerts {
+        text-align: center;
+        background-color: #212529;
+        border-radius: 50%;
+        padding: 0.2rem;
+        width: auto;
+    }
 }

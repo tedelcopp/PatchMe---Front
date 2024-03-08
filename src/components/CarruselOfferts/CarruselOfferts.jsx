@@ -1,6 +1,6 @@
 // AutoPlay.js
 import React, { Component } from "react";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PiWarningOctagonFill } from "react-icons/pi";
 import Slider from "react-slick";
@@ -60,18 +60,14 @@ export default class AutoPlay extends Component {
       image: 'https://via.placeholder.com/300',
       origin: 'España',
 
-      
+
       category: 'Rosado',
     },
   ];
 
   return (
     <div className={styles.offertContainer} >
-      <h2 className={styles.marginOfferts}>
-      <PiWarningOctagonFill />
-      Mas buscados
-      <PiWarningOctagonFill />
-        </h2>
+      <div className={styles.marginOfferts}></div>
       <Slider className={styles.slickSlider} {...settings}>
         {ofertas.map(oferta => (
           <ProductCard key={oferta.id} oferta={oferta} />
@@ -79,7 +75,7 @@ export default class AutoPlay extends Component {
       </Slider>
       <div className={styles.marginOfferts}></div>
     </div>
-    
+
   );
 }
  }
