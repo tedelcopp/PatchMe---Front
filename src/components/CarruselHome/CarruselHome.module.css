@@ -11,6 +11,16 @@
     height: auto;
 }
 
+.carouselCaption {
+    width: auto;
+    text-align: center;
+}
+
+.carouselCaption h3,
+.carouselCaption p {
+    white-space: nowrap;
+}
+
 /* Version Responsive */
 @media (max-width: 768px) {
     .carouselContainer {
@@ -20,5 +30,15 @@
 
     .carouselImage {
         height: 200px;
+    }
+
+    .carouselCaption {
+        text-align: center;
+    }
+
+    .carouselCaption h3,
+    .carouselCaption p {
+        display: block;
+        white-space: normal;
     }
 }

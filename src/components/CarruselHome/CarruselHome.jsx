@@ -6,18 +6,18 @@ export default function Carrusel() {
   return (
     <div className={`mb-4 ${styles.carouselContainer}`}>
  <Carousel>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={2500}>
         <img
           className="d-block w-100"
-          src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
+          src="https://i.ibb.co/vL0fNb5/original.png"
           alt="First slide"
           />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+       <Carousel.Caption className={styles.carouselCaption}>
+          <h3>Reduce • Reuse • Recycle</h3> 
+<p>~ Exclusive Items - Feria Vintage ®️ ~</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={2500}>
         <img
           className="d-block w-100"
           src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
@@ -28,7 +28,7 @@ export default function Carrusel() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2500}>
         <img
           className="d-block w-100"
           src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
