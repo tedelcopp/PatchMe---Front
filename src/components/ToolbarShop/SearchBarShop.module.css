@@ -1,0 +1,21 @@
+/* Version Ordenador */
+
+.searchBarContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inputPlaceholder {
+    color: transparent;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+
+/* Version Responsive */
+
+@media (max-width: 768px) {
+    .searchBarContainer {
+        width: auto;
+    }
+}

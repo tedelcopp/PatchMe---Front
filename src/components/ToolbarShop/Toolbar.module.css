@@ -1,0 +1,10 @@
+/* Toolbar.module.css */
+
+/* Estilos generales */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    width: auto;
+}

@@ -14,7 +14,7 @@ export default function Carrusel() {
           />
        <Carousel.Caption className={styles.carouselCaption}>
           <h3>Reduce • Reuse • Recycle</h3> 
-<p>~ Exclusive Items - Feria Vintage ®️ ~</p>
+<p>Exclusive Items - Feria Vintage®️</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2500}>

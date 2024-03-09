@@ -1,11 +1,10 @@
 /* Version Ordenador */
 .offertContainer {
-
     background-color: #D6D6D6;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 85%;
+    width: auto;
     border-radius: 20px;
 }
 
@@ -16,6 +15,10 @@
     padding: 1rem;
     text-decoration-line: underline;
     border-radius: 20px;
+}
+
+.slickSlider {
+    margin-top: 7px;
 }
 
 /* Version Responsive */

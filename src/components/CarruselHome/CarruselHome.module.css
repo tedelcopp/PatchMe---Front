@@ -16,12 +16,16 @@
     text-align: center;
 }
 
-.carouselCaption h3,
+.carouselCaption h3 {
+    font-size: 48px;
+}
+
 .carouselCaption p {
     white-space: nowrap;
 }
 
 /* Version Responsive */
+
 @media (max-width: 768px) {
     .carouselContainer {
         width: auto;
@@ -36,9 +40,17 @@
         text-align: center;
     }
 
-    .carouselCaption h3,
+    .carouselCaption h3 {
+        display: flex;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
     .carouselCaption p {
         display: block;
         white-space: normal;
+        white-space: nowrap;
     }
 }
