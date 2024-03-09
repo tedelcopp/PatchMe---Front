@@ -3,8 +3,25 @@
 /* Estilos generales */
 .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 55px;
-    width: auto;
+    align-items: center;
+    margin-top: 57px;
+}
+
+.shopContent {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columnas */
+    gap: 10px;
+    /* Espacio entre los botones */
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 768px) {
+    .shopContent {
+        flex-direction: row;
+        /* Cambia la dirección de los elementos a filas */
+        flex-wrap: wrap;
+        /* Permite que los botones se envuelvan en filas */
+    }
 }
