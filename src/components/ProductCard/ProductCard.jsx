@@ -6,11 +6,12 @@ import styles from "../ProductCard/ProductCard.module.css";
 export default function ProductCard() {
   const [cartShow, setCartShow] = useState(false);
   const [heartShow, setHeartShow] = useState(false);
+  
   return (
     <div className={styles.card}>
       <img
         className={styles.cardImg}
-        src="https://i.imgur.com/pjITBzX.jpg"
+        src="https://i.ibb.co/YbjxNW8/P-gina-4.jpg"
         width="auto"
         height="auto"
         alt="watch"

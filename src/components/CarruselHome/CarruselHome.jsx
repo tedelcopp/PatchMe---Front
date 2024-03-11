@@ -9,7 +9,7 @@ export default function Carrusel() {
       <Carousel.Item interval={2500}>
         <img
           className="d-block w-100"
-          src="https://i.ibb.co/vL0fNb5/original.png"
+          src="https://i.ibb.co/v315t1J/original-1.png"
           alt="First slide"
           />
        <Carousel.Caption className={styles.carouselCaption}>
