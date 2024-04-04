@@ -8,8 +8,8 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <Card className={`${styles.footerContainer} rounded-0 mt-4`}>
-      <div className={`card-body ${styles.bodyContainer}`}>
+    <Card className={styles.footerContainer}>
+      <div className={styles.bodyContainer}>
         <Card.Title><b>¿Querés comunicarte con nosotros?</b></Card.Title>
         <Card.Text className={`mb-1 font-italic ${styles.text}`}>
           <BsFillTelephoneFill /> 

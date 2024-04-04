@@ -5,7 +5,8 @@
     background: rgb(1, 147, 174);
     background: linear-gradient(326deg, rgba(1, 147, 174, 1) 0%, rgba(233, 167, 19, 1) 75%);
     border-color: #212529;
-    border-width: 3.5px;
+    border-width: 5px;
+    border-radius: 0;
 }
 
 .bodyContainer {
