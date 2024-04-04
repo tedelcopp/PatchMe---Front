@@ -7,39 +7,31 @@ export default function Carrusel() {
     <div className={`mb-4 ${styles.carouselContainer}`}>
  <Carousel>
       <Carousel.Item interval={2500}>
+      <div className={styles.imageContainer}>
         <img
           className="d-block w-100"
-          src="https://i.ibb.co/v315t1J/original-1.png"
+          src="https://i.ibb.co/9V6GkhS/10-4-1.jpg"
           alt="First slide"
           />
-       <Carousel.Caption className={styles.carouselCaption}>
-          <h3>Reduce • Reuse • Recycle</h3> 
-<p>Exclusive Items - Feria Vintage®️</p>
-        </Carousel.Caption>
+          </div>
       </Carousel.Item>
       <Carousel.Item interval={2500}>
+        <div className={styles.imageContainer}>
         <img
           className="d-block w-100"
-          src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
+          src="https://i.ibb.co/0h3mLTr/10-1-1.jpg"
           alt="Second slide"
           />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+          </div>
       </Carousel.Item>
       <Carousel.Item interval={2500}>
+      <div className={styles.imageContainer}>
         <img
           className="d-block w-100"
-          src="https://i.ibb.co/ssKpR9P/blue-dark-light-formation-4k-92.jpg"
+          src="https://i.ibb.co/DpcWzPG/3.jpg"
           alt="Third slide"
           />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+          </div>
       </Carousel.Item>
     </Carousel>
           </div>

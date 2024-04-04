@@ -3,12 +3,14 @@ import Toolbar from "../../components/ToolbarShop/Toolbar";
 import SearchBarShop from "../../components/ToolbarShop/SearchBarShop";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Loader from "../../components/Loader/Loader";
+import toast, { Toaster } from 'react-hot-toast';
 import styles from "./Shop.module.css";
 
 export default function Shop() {
 
   const [loading, setLoading] = useState(true);
-
+  const notify = () => toast('Here is your toast.');
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);

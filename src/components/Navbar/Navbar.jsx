@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
+import { BsFillCartCheckFill } from "react-icons/bs";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import styles from "./Navbar.module.css";
@@ -32,6 +33,9 @@ export default function NavBar() {
               />
             </div>
           </Link>
+
+          <button><BsFillCartCheckFill /></button>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -72,6 +76,24 @@ export default function NavBar() {
                     onClick={closeMenuAndScrollTop}
                   >
                     Nosotros
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="/carrito"
+                    className="nav-link active"
+                    onClick={closeMenuAndScrollTop}
+                  >
+                Wishlist
+                  </Link>
+                </li>
+                  <li className="nav-item">
+                  <Link
+                    to="/carrito"
+                    className="nav-link active"
+                    onClick={closeMenuAndScrollTop}
+                  >
+                   Carrito de Compras
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
@@ -124,6 +146,7 @@ export default function NavBar() {
                         Outlet
                       </Link>
                     </li>
+
                   </ul>
                 </li>
               </ul>
