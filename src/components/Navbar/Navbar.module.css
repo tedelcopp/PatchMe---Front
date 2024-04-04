@@ -4,11 +4,34 @@
     font-size: 1.5rem;
     font-family: system-ui;
     text-align: center;
+    transition: color 0.3s ease;
 }
+
+.navCart,
+.navHeart {
+    font-size: 1.8rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navCart:hover,
+.navHeart:hover {
+    color: greenyellow;
+}
+
+.navHeart:hover {
+    color: red;
+}
+
 
 /* Version Responsive */
 @media (max-width: 768px) {
     .customLink a {
         font-size: 1.2rem;
+    }
+
+    .navCart,
+    .navHeart {
+        font-size: 1.6rem;
     }
 }
