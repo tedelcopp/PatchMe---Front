@@ -24,7 +24,7 @@ export default function NavBar() {
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" onClick={closeMenuAndScrollTop}>
             <div className="d-flex align-items-center">
-              <h3 className="ms-2 mb-0" style={{ fontSize: '22px' }}>Patch&Me</h3>
+              <h3 className="ms-2 mb-0" style={{ fontSize: '18px' }}>Patch&Me</h3>
               <img
                 src="https://i.ibb.co/xL8FtR2/a41f71d2332ed44fa93e01de5bbc3bff.png"
                 width="55"

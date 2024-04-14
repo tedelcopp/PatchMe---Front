@@ -1,9 +1,10 @@
 /* Version Ordenador */
 .carouselContainer {
-    width: 85%;
-    margin: 90px auto;
+    width: 100%;
+    margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .carouselImage {
@@ -28,8 +29,11 @@
 
 @media (max-width: 768px) {
     .carouselContainer {
-        width: auto;
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 500px;
     }
 
     .carouselImage {

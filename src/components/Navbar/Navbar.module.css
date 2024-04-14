@@ -9,7 +9,7 @@
 
 .navCart,
 .navHeart {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: white;
     transition: color 0.3s ease;
 }
@@ -27,11 +27,11 @@
 /* Version Responsive */
 @media (max-width: 768px) {
     .customLink a {
-        font-size: 1.2rem;
+        font-size: 0.1rem;
     }
 
     .navCart,
     .navHeart {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }

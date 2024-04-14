@@ -4,7 +4,7 @@
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 1% 0 4.5% 0;
+    padding: 5% 0 3% 0;
     margin-top: 55px;
     overflow-x: hidden;
     position: relative;
@@ -148,7 +148,15 @@
     background-color: #1A9A00;
 }
 
+/* Version Responsive  */
+
 @media (max-width: 768px) {
+    .productDetailContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     .detailContent {
         flex-direction: column;
     }
@@ -167,7 +175,7 @@
     }
 
     .imageContainer {
-        width: auto;
+        width: 100%;
         height: auto;
         overflow: hidden;
         border: 25px solid #212429;
@@ -180,5 +188,16 @@
     .imageContainer img {
         max-width: 100%;
         height: auto;
+    }
+
+    .backButton {
+        position: static;
+        top: 10px;
+        margin-top: 55px;
+        margin-bottom: -45px;
+        left: 15px;
+        cursor: pointer;
+        color: #FFFFFF;
+        background-color: #212429;
     }
 }

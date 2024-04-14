@@ -5,7 +5,7 @@
     justify-content: center;
     margin: 0 auto;
     width: auto;
-    border-radius: 20px;
+    margin-bottom: 2%;
 }
 
 .marginOfferts {
@@ -14,7 +14,7 @@
     background-color: #40474F;
     padding: 1rem;
     text-decoration-line: underline;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 .slickSlider {
