@@ -1,0 +1,37 @@
+.shopContainer {
+  background-image: url('https://i.ibb.co/58Rrmv4/photo-1589810264340-0ce27bfbf751.jpg');
+  width: auto;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 1% 0 4.5% 0;
+  margin-top: 25px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+}
+
+.titleContainer {
+  margin-bottom: 20px;
+}
+
+.titleOutlet {
+  font-size: 36px;
+  color: red;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.locationProducts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 25px;
+}
