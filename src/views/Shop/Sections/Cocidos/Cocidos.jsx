@@ -5,7 +5,7 @@ export default function Cocidos() {
   return (
     <div>
       <h2>Cocidos</h2>
-      <ProductCard/>
+      <ProductCard />
       <p>Este es el contenido de la página Cocidos.</p>
     </div>
   );

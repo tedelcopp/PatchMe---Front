@@ -4,11 +4,25 @@
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 1% 0 4.5% 0;
     margin-top: 25px;
     overflow-x: hidden;
 }
-
+.locationProductsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* Ajusta según sea necesario */
+  }
+  
+  .spinnerContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 .titleShop{
     text-align: center;
     margin-top: 20px;

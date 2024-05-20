@@ -20,6 +20,22 @@ export default function Shop() {
   }, [location]);
 
   const showAllProducts = location.pathname === "/shop";
+  const category = showAllProducts
+    ? "Todos nuestros patchs, para vos!"
+    : getCategoryTitle(location.pathname);
+
+  function getCategoryTitle(pathname) {
+    switch (pathname) {
+      case "/shop/cocidos":
+        return "Cocidos";
+      case "/shop/termoadhesivos":
+        return "Termoadhesivos";
+      case "/shop/outlet":
+        return "Outlet";
+      default:
+        return "Categoría desconocida";
+    }
+  }
 
   return (
     <div className={styles.shopContainer}>
@@ -30,16 +46,16 @@ export default function Shop() {
         >
           <ButtonGroup aria-label="First group">
             <nav className={styles.categoryNav}>
-              <Link to="" className="btn btn-secondary">
+              <Link to="/shop" className="btn btn-secondary">
                 All Patches
               </Link>
-              <Link to="cocidos" className="btn btn-secondary">
+              <Link to="/shop/cocidos" className="btn btn-secondary">
                 Cocidos
               </Link>
-              <Link to="termoadhesivos" className="btn btn-secondary">
+              <Link to="/shop/termoadhesivos" className="btn btn-secondary">
                 Termoadhesivos
               </Link>
-              <Link to="outlet" className="btn btn-secondary">
+              <Link to="/shop/outlet" className="btn btn-secondary">
                 Outlet
               </Link>
             </nav>
@@ -48,33 +64,36 @@ export default function Shop() {
       </div>
       <SearchBarShop />
       <div>
-        <h3 className={styles.titleShop}>Todos nuestros patchs, para vos!</h3>
+        <h3 className={styles.titleShop}>{category}</h3>
       </div>
-      {loading ? (
-        <div className="d-flex justify-content-center mt-5">
-          <Spinner animation="border" role="status">
-            <span className="sr-only">Loading...</span>
-          </Spinner>
-        </div>
-      ) : (
-        <div className={styles.locationProducts}>
-          {showAllProducts ? (
-            <>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-            </>
-          ) : (
-            <Outlet />
-          )}
-        </div>
-      )}
+      <div className={styles.locationProductsContainer}>
+        {loading && (
+          <div className={styles.spinnerContainer}>
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          </div>
+        )}
+        {!loading && (
+          <div className={styles.locationProducts}>
+            {showAllProducts ? (
+              <>
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+              </>
+            ) : (
+              <Outlet />
+            )}
+          </div>
+        )}
+      </div>
       <Toaster />
     </div>
   );

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import styles from "./Navbar.module.css";
 
 export default function NavBar() {
@@ -24,7 +24,9 @@ export default function NavBar() {
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" onClick={closeMenuAndScrollTop}>
             <div className="d-flex align-items-center">
-              <h3 className="ms-2 mb-0" style={{ fontSize: '18px' }}>Patch&Me</h3>
+              <h3 className="ms-2 mb-0" style={{ fontSize: "18px" }}>
+                Patch&Me
+              </h3>
               <img
                 src="https://i.ibb.co/xL8FtR2/a41f71d2332ed44fa93e01de5bbc3bff.png"
                 width="55"
@@ -34,10 +36,18 @@ export default function NavBar() {
             </div>
           </Link>
           <div className="d-flex align-items-center">
-            <Link to="/wishlist" className={`${styles.navLink} me-3`} onClick={closeMenuAndScrollTop}>
+            <Link
+              to="/wishlist"
+              className={`${styles.navLink} me-3`}
+              onClick={closeMenuAndScrollTop}
+            >
               <FaHeart className={styles.navHeart} />
             </Link>
-            <Link to="/cart" className={`${styles.navLink} me-3`} onClick={closeMenuAndScrollTop}>
+            <Link
+              to="/cart"
+              className={`${styles.navLink} me-3`}
+              onClick={closeMenuAndScrollTop}
+            >
               <FaShoppingCart className={styles.navCart} />
             </Link>
             <button
@@ -52,7 +62,9 @@ export default function NavBar() {
         </div>
       </nav>
       <div
-        className={`offcanvas offcanvas-end text-bg-dark ${isMenuOpen ? 'show' : ''}`}
+        className={`offcanvas offcanvas-end text-bg-dark ${
+          isMenuOpen ? "show" : ""
+        }`}
         tabIndex="-1"
         id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel"
@@ -107,7 +119,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/shop-cocidos"
+                    to="shop/cocidos"
                     className="dropdown-item"
                     onClick={closeMenuAndScrollTop}
                   >
@@ -116,7 +128,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/shop-termoadhesivos"
+                    to="shop/termoadhesivos"
                     className="dropdown-item"
                     onClick={closeMenuAndScrollTop}
                   >
@@ -128,14 +140,13 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/outlet"
+                    to="shop/outlet"
                     className="dropdown-item"
                     onClick={closeMenuAndScrollTop}
                   >
                     Outlet
                   </Link>
                 </li>
-
               </ul>
             </li>
           </ul>
