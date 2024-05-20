@@ -27,13 +27,13 @@ export default function Shop() {
   function getCategoryTitle(pathname) {
     switch (pathname) {
       case "/shop/cocidos":
-        return "Cocidos";
+        return "Patchs Cocidos";
       case "/shop/termoadhesivos":
-        return "Termoadhesivos";
+        return "Patchs Termoadhesivos";
       case "/shop/outlet":
-        return "Outlet";
+        return "Patchs en Outlet";
       default:
-        return "Categoría desconocida";
+        return "Categoría no disponible";
     }
   }
 

@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import LogIn from "../LogIn/LogIn";
 import styles from "./Navbar.module.css";
 
 export default function NavBar() {
@@ -87,6 +88,9 @@ export default function NavBar() {
               >
                 Inicio
               </Link>
+            </li>
+            <li className="nav-item">
+              <LogIn />
             </li>
             <li className="nav-item">
               <Link
