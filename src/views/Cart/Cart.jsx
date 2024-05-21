@@ -4,16 +4,20 @@ import styles from "./Cart.module.css";
 export default function Cart() {
   const products = [];
 
-  if (products.length === 0) {
-    return (
-      <div className={styles.mainCart}>
-        <h2 className={styles.cartTitle}>
-          <u>Shopping Cart</u>
-        </h2>
+  return (
+    <div className={styles.mainCart}>
+      <h2 className={styles.cartTitle}>
+        <u>Shopping Cart</u>🛒
+      </h2>
+      {products.length === 0 ? (
         <p className={styles.emptyCartMsg}>
-          No hay elementos cargados essn el carrito.
+          No hay patchs cargados en tu carrito de compras.
         </p>
-      </div>
-    );
-  }
+      ) : (
+        <div className={styles.productList}>
+          {/* Código para renderizar patchs */}
+        </div>
+      )}
+    </div>
+  );
 }

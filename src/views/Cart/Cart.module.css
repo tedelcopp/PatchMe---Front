@@ -1,33 +1,47 @@
+
 .mainCart {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cartTitle {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .emptyCartMsg {
-    color: #666;
-    text-align: center;
-  }
-  
-  /* Estilos para botones */
-  .button {
-    background-color: #ccc;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #999;
-  }
-  
+  background: linear-gradient(145deg,  #FFB404, #0098B4); /* Degradado de violeta a naranja */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 70px); /* Ajusta 70px según la altura de tu navbar */
+  padding: 1% 0 4.5% 0;
+  margin-top: 70px; /* Ajusta 70px según la altura de tu navbar */
+  overflow-x: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cartTitle {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emptyCartMsg {
+  color: #666;
+  text-align: center;
+}
+
+/* Estilos para botones */
+.button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #999;
+}
+
+/* Si tienes estilos adicionales para la lista de productos */
+.productList {
+  /* Estilos para la lista de productos, si los necesitas */
+}

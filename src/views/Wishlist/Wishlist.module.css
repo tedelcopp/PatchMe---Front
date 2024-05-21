@@ -1,0 +1,48 @@
+
+.mainWishlist {
+    background: linear-gradient(145deg,  #FFB404, #0098B4); /* Degradado de violeta a naranja */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 70px); /* Ajusta 70px según la altura de tu navbar */
+    padding: 1% 0 4.5% 0;
+    margin-top: 70px; /* Ajusta 70px según la altura de tu navbar */
+    overflow-x: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .wishTitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wishEmpity {
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Estilos para botones */
+  .button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #999;
+  }
+  
+  /* Si tienes estilos adicionales para la lista de productos */
+  .productList {
+    /* Estilos para la lista de productos, si los necesitas */
+  }
+  

@@ -12,6 +12,7 @@ import Cocidos from "./views/Shop/Sections/Cocidos/Cocidos";
 import Novedades from "./views/Shop/Sections/Novedades/Novedades";
 import Cart from "./views/Cart/Cart";
 import styles from "./App.module.css";
+import Wishlist from "./views/Wishlist/Wishlist";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/nosotros" element={<AboutUs />} />
             <Route path="/descripcion" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/shop" element={<Shop />}>
               <Route path="outlet" element={<Outlet />} />
               <Route path="termoadhesivos" element={<Termoadhesivos />} />

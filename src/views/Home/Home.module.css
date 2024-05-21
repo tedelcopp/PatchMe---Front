@@ -1,7 +1,8 @@
 .backgroundHome {
     overflow-x: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('https://i.ibb.co/58Rrmv4/photo-1589810264340-0ce27bfbf751.jpg');
-}
+  background: linear-gradient(145deg, #0098B4, #FFB404); /* Degradado de violeta a naranja */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  
