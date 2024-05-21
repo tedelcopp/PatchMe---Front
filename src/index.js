@@ -21,5 +21,4 @@ root.render(
   </React.StrictMode>
 );
 
-// Reportar métricas de rendimiento de la aplicación
 reportWebVitals();

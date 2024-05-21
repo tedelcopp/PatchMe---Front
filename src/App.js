@@ -11,24 +11,29 @@ import Termoadhesivos from "./views/Shop/Sections/Termoadhesivos/Termoadhesivos"
 import Cocidos from "./views/Shop/Sections/Cocidos/Cocidos";
 import Novedades from "./views/Shop/Sections/Novedades/Novedades";
 import Cart from "./views/Cart/Cart";
+import styles from "./App.module.css";
 
 export default function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/nosotros" element={<AboutUs />} />
-        <Route path="/descripcion" element={<ProductDetail />} />
-        <Route path="/carrito" element={<Cart />} />
-        <Route path="/shop" element={<Shop />}>
-          <Route path="outlet" element={<Outlet />} />
-          <Route path="termoadhesivos" element={<Termoadhesivos />} />
-          <Route path="cocidos" element={<Cocidos />} />
-          <Route path="novedades" element={<Novedades />} />
-        </Route>
-      </Routes>
-      <Footer />
+      <div className={styles.app}>
+        <NavBar />
+        <div className={styles.content}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/nosotros" element={<AboutUs />} />
+            <Route path="/descripcion" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/shop" element={<Shop />}>
+              <Route path="outlet" element={<Outlet />} />
+              <Route path="termoadhesivos" element={<Termoadhesivos />} />
+              <Route path="cocidos" element={<Cocidos />} />
+              <Route path="novedades" element={<Novedades />} />
+            </Route>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }

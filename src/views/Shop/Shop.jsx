@@ -4,7 +4,7 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import SearchBarShop from "../../components/ToolbarShop/SearchBarShop";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import styles from "./Shop.module.css";
 import Spinner from "react-bootstrap/Spinner";
 
