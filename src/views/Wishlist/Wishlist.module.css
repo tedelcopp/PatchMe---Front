@@ -26,7 +26,7 @@
     text-align: center;
   }
   
-  /* Estilos para botones */
+  /* Start Buttons Section */
   .button {
     background-color: #ccc;
     color: #fff;
@@ -41,8 +41,83 @@
     background-color: #999;
   }
   
-  /* Si tienes estilos adicionales para la lista de productos */
   .productList {
-    /* Estilos para la lista de productos, si los necesitas */
+    background-color: white;
+    padding: 10px;
+  }
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .wishlistButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
+  .wishlistButton:hover {
+    background-color: #d53232;
+  }
+
+.wishCartButton{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wishCartButton:hover {
+  background-color: #34ff06;
+}
+
+  .iconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .iconButton:hover {
+    color: red; 
+  }
+
+  .productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    gap: 10px; 
+  }
+  
+  .productItem {
+    background-color: #fff; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addButton,
+  .deleteButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .addButton:hover{
+    color: rgb(38, 175, 8); 
+  }
+  .deleteButton:hover {
+    color: red; 
+  }
+ /* End Buttons Section */

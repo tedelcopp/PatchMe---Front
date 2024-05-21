@@ -6,7 +6,7 @@ const LogIn = () => {
 
   const handleLogin = () => {
     loginWithRedirect({
-      redirectUri: `${window.location.origin}/callback`, // Especificar la URL de redirección
+      redirectUri: `${window.location.origin}/callback`,
     });
   };
 

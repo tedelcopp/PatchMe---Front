@@ -1,17 +1,20 @@
-/* Footer.module.css */
 .footerContainer {
-    background-image: url("https://i.ibb.co/7QBMQLQ/fondo-escritorio-flores-vector-lindo-53876-136877.jpg");
+    background: linear-gradient(135deg, #f5f6fa, #dcdde1); /* Degradado de tonos de gris suaves */
     box-sizing: border-box;
-    background: rgb(1, 147, 174);
-    background: linear-gradient(326deg, rgba(1, 147, 174, 1) 0%, rgba(233, 167, 19, 1) 75%);
     border-color: #212529;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 0;
     overflow-x: hidden;
     bottom: 0;
     width: 100%;
+    padding: 20px 0; 
 }
 
+.text {
+    font-size: 14px;
+    margin: 0;
+    color: #333; /* Color de texto más oscuro para contraste */
+}
 .bodyContainer {
     display: flex;
     flex-direction: column;
@@ -24,10 +27,7 @@
     padding: 0;
 }
 
-.text {
-    font-size: 14px;
-    margin: 0;
-}
+
 
 .font-italic {
     font-style: italic;
@@ -38,7 +38,7 @@
 }
 
 .customFooter {
-    width: 98.8vw;
+    width: 100vw;
     margin-top: 15px;
     box-sizing: border-box;
     text-align: center;
@@ -52,7 +52,7 @@
 /* Version Responsive */
 @media (min-width: 768px) {
     .footerContainer {
-        padding: 0px;
+        padding: 0px 20px; /* Ajuste de padding para pantallas grandes */
     }
 
     .btn,

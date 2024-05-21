@@ -1,41 +1,47 @@
-/* CarruselHome.module.css */
 .carouselContainer {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carouselImage {
-    width: 100%;
-    height: auto;
-    max-height: 500px; /* Limita la altura máxima para evitar deformaciones */
-  }
-  
-  /* Version Responsive */
-  @media (max-width: 768px) {
-    .carouselContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  height: 500px; /* Establece una altura fija para todos los slides del carrusel */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Ajusta la altura máxima para evitar deformaciones */
+}
+
+/* Version Responsive */
+@media (max-width: 768px) {
+  .carouselContainer {
       flex-direction: column;
       height: auto; /* Ajusta la altura automáticamente para pantallas pequeñas */
-    }
-  
-    .carouselImage {
-      max-height: 300px; /* Ajusta la altura máxima para pantallas pequeñas */
-    }
-  
-    .carouselCaption h3 {
-      font-size: 25px;
-    }
-  
-    .carouselCaption p {
-      white-space: normal;
-    }
   }
-  
+
+  .carousel {
+      height: 300px; /* Establece una altura fija para pantallas pequeñas */
+  }
+
+  .carouselImage {
+      max-height: 100%; /* Ajusta la altura máxima para pantallas pequeñas */
+  }
+
+  .carouselCaption h3 {
+      font-size: 25px;
+  }
+
+  .carouselCaption p {
+      white-space: normal;
+  }
+}

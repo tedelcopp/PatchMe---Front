@@ -1,39 +1,43 @@
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from "./CarruselHome.module.css"
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+import WallpaperPatchMe1 from "../../assets/Carousel/WallpaperPatchMe1.jpg";
+import WallpaperPatchMe2 from "../../assets/Carousel/WallpaperPatchMe2.jpg";
+import WallpaperPatchMe3 from "../../assets/Carousel/WallpaperPatchMe3.jpg";
+import styles from "./CarruselHome.module.css";
 
 export default function Carrusel() {
   return (
     <div className={`mb-4 ${styles.carouselContainer}`}>
- <Carousel>
-      <Carousel.Item interval={2500}>
-      <div className={styles.imageContainer}>
-        <img
-          className="d-block w-100"
-          src="https://i.ibb.co/9V6GkhS/10-4-1.jpg"
-          alt="First slide"
-          />
+      <Carousel>
+        <Carousel.Item interval={2500}>
+          <div className={styles.imageContainer}>
+            <img
+              className="d-block w-100"
+              src={WallpaperPatchMe1}
+              alt="First slide"
+            />
           </div>
-      </Carousel.Item>
-      <Carousel.Item interval={2500}>
-        <div className={styles.imageContainer}>
-        <img
-          className="d-block w-100"
-          src="https://i.ibb.co/0h3mLTr/10-1-1.jpg"
-          alt="Second slide"
-          />
+          s
+        </Carousel.Item>
+        <Carousel.Item interval={2500}>
+          <div className={styles.imageContainer}>
+            <img
+              className="d-block w-100"
+              src={WallpaperPatchMe2}
+              alt="Second slide"
+            />
           </div>
-      </Carousel.Item>
-      <Carousel.Item interval={2500}>
-      <div className={styles.imageContainer}>
-        <img
-          className="d-block w-100"
-          src="https://i.ibb.co/DpcWzPG/3.jpg"
-          alt="Third slide"
-          />
+        </Carousel.Item>
+        <Carousel.Item interval={2500}>
+          <div className={styles.imageContainer}>
+            <img
+              className="d-block w-100"
+              src={WallpaperPatchMe3}
+              alt="Third slide"
+            />
           </div>
-      </Carousel.Item>
-    </Carousel>
-          </div>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 }
