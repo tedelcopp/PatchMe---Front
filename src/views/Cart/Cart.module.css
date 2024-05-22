@@ -1,32 +1,30 @@
-
-.mainWishlist {
-  background: linear-gradient(145deg,  #FFB404, #0098B4); /* Degradado de violeta a naranja */
+.mainCart {
+  background: linear-gradient(145deg, #FFB404, #0098B4); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 70px); /* Ajusta 70px según la altura de tu navbar */
+  min-height: calc(100vh - 70px); 
   padding: 1% 0 4.5% 0;
-  margin-top: 70px; /* Ajusta 70px según la altura de tu navbar */
+  margin-top: 70px; 
   overflow-x: hidden;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.wishTitle {
+.cartTitle {
   color: #333;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.wishEmpity {
+.cartEmpty {
   color: #666;
   text-align: center;
 }
 
-/* Start Buttons Section */
 .button {
   background-color: #ccc;
   color: #fff;
@@ -42,9 +40,77 @@
 }
 
 .productList {
-  background-color: white;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .productList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.productItem {
+  background-color: #fff;
+  padding: 10px;
+  border: 5px solid #ccc;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.detail {
+  font-size: 18px;
+}
+
+.productButtons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.addButton,
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.addButton:hover {
+  color: rgb(38, 175, 8);
+}
+
+.deleteButton:hover {
+  color: red;
+}
+
+.productList:only-child {
+  display: flex;
+  justify-content: center;
+}
+
 .buttonsContainer {
   display: flex;
   justify-content: center;
@@ -52,7 +118,8 @@
   margin-top: 20px;
 }
 
-.wishlistButton {
+.wishlistButton,
+.wishCartButton {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -66,58 +133,6 @@
   background-color: #d53232;
 }
 
-.wishCartButton{
-padding: 10px 20px;
-font-size: 16px;
-color: white;
-background-color: #007bff;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
 .wishCartButton:hover {
-background-color: #34ff06;
+  background-color: #34ff06;
 }
-
-.iconButton {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-.iconButton:hover {
-  color: red; 
-}
-
-.productList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-  gap: 10px; 
-}
-
-.productItem {
-  background-color: #fff; 
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.addButton,
-.deleteButton {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-}
-.addButton:hover{
-  color: rgb(38, 175, 8); 
-}
-.deleteButton:hover {
-  color: red; 
-}
-/* End Buttons Section */
